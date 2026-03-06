@@ -10,29 +10,21 @@ package com.mycompany.arithmeticmethods;
  */
 
 //DO NOT rename the class inside the code editor, do it in the solution explorer
+//See previoud commit for different method functionality approaches
 public class Operators {
-    
-//Approach #1
     public static int summation(int a, int b){
         return a + b;
     }
-    
-//Approach #2    
-    public static String subtraction(int a, int b){
-        return "Sum of "+a+" and "+b+" is "+(a+b);
+    public static int subtraction(int a, int b){
+        return a - b;
     }
-    
-//Approach #3
-    public void multiplication(int a, int b){
-        double total = a * b;
-        System.out.println("Multiplication of "+a+" and "+b+" is "+total);
+    public static int multiplication(int a, int b){
+        return a * b;
     }
-    public void division(int a, int b){
-        float total = a / b;
-        System.out.println(a+" divided by "+b+" is "+total);
+    public static int division(int a, int b){
+        return a / b;
     }
-    public void remainder(int a, int b){
-        int total = a % b;
-        System.out.println("Remainder between "+a+" and "+b+"is"+total);
+    public static int remainder(int a, int b){
+        return a % b;
     }
 }

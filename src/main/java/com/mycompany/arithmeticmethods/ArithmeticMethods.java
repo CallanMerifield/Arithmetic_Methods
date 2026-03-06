@@ -2,32 +2,31 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 package com.mycompany.arithmeticmethods;
-
+import java.util.*;
 /**
  *
  * @author lab_services_student
  */
 
-
-/*
-    Create class Operator with methods for (+, -, *, /, %)
-    Create method printMessage()
-    Prompt user for 2 int vals
-    Invoke methods and display results
-*/
-
 public class ArithmeticMethods {
 //SEE OPERATORS class for different implementation approaches
     public static void main(String[] args) {
-     Operators op = new Operators();
+        
+     Scanner sc = new Scanner(System.in);
      
-     System.out.println(op.summation(5, 4));
-     System.out.println(op.subtraction(10, 5));
-     op.multiplication(2, 6);
-     op.division(100, 20);
-     op.remainder(124, 34345);
+        System.out.print("Enter first int value: ");
+        int num1 =  sc.nextInt();
+        
+        System.out.print("Enter second int value: ");
+        int num2 =  sc.nextInt();
      
-     printMessage();
+        System.out.println("The Summation: " + Operators.summation(num1, num2));
+        System.out.println("The Difference: " + Operators.subtraction(num1, num2));
+        System.out.println("The Product: " + Operators.multiplication(num1, num2));
+        System.out.println("The Quotient: " + Operators.division(num1, num2));
+        System.out.println("The Remainder: " + Operators.remainder(num1, num2));
+        
+        printMessage();
     }
     
     public static void printMessage(){
