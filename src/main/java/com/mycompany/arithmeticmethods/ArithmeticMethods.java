@@ -20,7 +20,7 @@ public class ArithmeticMethods {
         System.out.print("Enter second int value: ");
         int num2 =  sc.nextInt();
      
-        System.out.println("The Summation: " + Operators.summation(num1, num2));
+        System.out.println("\nThe Summation: " + Operators.summation(num1, num2));
         System.out.println("The Difference: " + Operators.subtraction(num1, num2));
         System.out.println("The Product: " + Operators.multiplication(num1, num2));
         System.out.println("The Quotient: " + Operators.division(num1, num2));
